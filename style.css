@@ -642,11 +642,12 @@ body {
   background: transparent;
 }
 .footer-inner {
-  padding: 16px 0;
+  padding: 16px clamp(28px, 5vw, 48px);
   display: flex;
+  flex-direction: column;
   gap: 10px;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-wrap: wrap;
   color: #6b7280;
 }
