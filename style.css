@@ -567,6 +567,11 @@ body {
     radial-gradient(120px 100px at 30% 30%, rgba(148, 255, 208, .30), transparent 70%),
     radial-gradient(120px 100px at 70% 40%, rgba(255, 214, 165, .26), transparent 70%);
 }
+.events-grid .event.glass:nth-child(4)::after {
+  background:
+    radial-gradient(120px 100px at 30% 30%, rgba(255, 148, 208, .30), transparent 70%),
+    radial-gradient(120px 100px at 70% 40%, rgba(148, 163, 255, .28), transparent 70%);
+}
 .card,
 .event {
   transition: transform .2s ease, box-shadow .2s ease;
@@ -580,10 +585,10 @@ body {
 .events-grid {
   display: grid;
   gap: 32px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 32px;
 }
-@media (max-width: 960px) {
+@media (max-width: 1024px) {
   .events-grid {
     grid-template-columns: repeat(2, 1fr);
   }
